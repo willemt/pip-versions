@@ -1,3 +1,5 @@
+Get version information about a pip from pypi (and private repos)
+
 Installation
 ============
 
