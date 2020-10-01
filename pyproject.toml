@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pip-versions"
+version = "0.1.0"
+license = "BSD"
+description = "Show pip version information from pypi"
+readme = "README.rst"
+authors = ["Willem Thiart <himself@willemthiart.com>"]
+repository = "https://github.com/willemt/pip-versions/"
+keywords = ["pip"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+cliar = "^1.3.4"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pip-versions = "pip_versions.cli:entry_point"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
