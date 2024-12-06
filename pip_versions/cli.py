@@ -13,13 +13,13 @@ class Versions(Cliar):
     def list(self, package_name: str, include_pre: bool = False):
         """List the versions available to a package"""
         versions = find_versions(package_name, include_pre)
-        for v in sorted(set(v.version for v in versions)):
+        for v in sorted(set(versions)):
             print(v)
 
     def latest(self, package_name: str, include_pre: bool = False):
         """Show the latest version of a package"""
         versions = find_versions(package_name, include_pre)
-        print(sorted(versions)[-1].version)
+        print(sorted(versions)[-1])
 
 
 def entry_point():
