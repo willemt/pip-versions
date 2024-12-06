@@ -26,5 +26,5 @@ def entry_point():
     Versions().parse()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     entry_point()
