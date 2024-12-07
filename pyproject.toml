@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pip-versions"
-version = "0.1.0"
+version = "0.2.0"
 license = "BSD"
 description = "Show pip version information from pypi"
 readme = "README.rst"
