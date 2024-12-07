@@ -16,4 +16,4 @@ def find_versions(package_name: str, include_pre: bool = False):
     for candidate in candidates:
         if not include_pre and candidate.version.pre:
             continue
-        yield candidate
+        yield candidate.version
